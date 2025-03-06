@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote name="origin" 
+                fetch="https://github.com/aosp-xiaomi"
+                revision="15" />
+
+        <remote name="los"
+                fetch="https://github.com/cupid-development"
+                revision="lineage-22.1"
+                clone-depth="1" />
+
+        <remote name="codeberg"
+                fetch="https://codeberg.org/lemezohaib"
+                revision="15" />
+
+        <!-- Device Trees -->
+        <project path="device/xiaomi/sweet" name="android_device_xiaomi_sweet" remote="origin" />
+        <project path="device/xiaomi/marble" name="android_device_xiaomi_marble" remote="origin" />
+        <project path="device/xiaomi/sm6150-common" name="android_device_xiaomi_sm6150-common" remote="origin" />
+        <project path="device/xiaomi/sm8450-common" name="android_device_xiaomi_sm8450-common" remote="origin" />
+        <project path="device/xiaomi/miuicamera-sweet" name="android_device_xiaomi_miuicamera" revision="15-sweet"  remote="origin" />
+        <project path="device/xiaomi/miuicamera-marble" name="android_device_xiaomi_miuicamera" revision="15-marble"  remote="origin" />
+
+        <!-- Vendor Trees-->
+        <project path="vendor/xiaomi/sweet" name="proprietary_vendor_xiaomi_sweet" remote="origin" />
+        <project path="vendor/xiaomi/marble" name="proprietary_vendor_xiaomi_marble" remote="codeberg" />
+        <project path="vendor/xiaomi/sm6150-common" name="proprietary_vendor_xiaomi_sm6150-common" remote="origin" />
+        <project path="vendor/xiaomi/sm8450-common" name="proprietary_vendor_xiaomi_sm8450-common" remote="origin" />
+        <project path="vendor/xiaomi/miuicamera-sweet" name="proprietary_vendor_xiaomi_miuicamera-sweet" remote="origin" />
+        <project path="vendor/xiaomi/miuicamera-marble" name="proprietary_vendor_xiaomi_miuicamera-marble" remote="codeberg" />
+
+        <!-- Kernel-->
+        <project path="kernel/xiaomi/sm6150" name="android_kernel_xiaomi_sm6150" remote="origin" />
+        <project path="kernel/xiaomi/sm8450" name="android_kernel_xiaomi_sm8450" remote="los" />
+        <project path="kernel/xiaomi/sm8450-devicetrees" name="android_kernel_xiaomi_sm8450-devicetrees" remote="los" />
+        <project path="kernel/xiaomi/sm8450-modules" name="android_kernel_xiaomi_sm8450-modules" remote="los" />
+
+        <!-- Hardware-->
+        <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="origin" />
+
+</manifest>
